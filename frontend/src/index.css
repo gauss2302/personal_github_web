@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background:  url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* looking scrollbar */
+
+::-webkit-scrollbar-track {
+    background: azure;
+}
+
+::-webkit-scrollbar-thumb{
+    background: aquamarine;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+@layer components {
+    .bg-glass {
+        @apply bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20
+        hover:bg-gray-100/10 border border-gray-50 text-white;
+    }
+}
