@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <aside
       className={
-        "flex flex-col items-center min-w-12 sm:w-16 sticky top-0 left-0 h-screen py-8 overflow-y-auto border-r bg-glass"
+        "flex flex-col items-center sm:w-16 sticky top-0 left-0 h-screen py-8 overflow-y-auto bg-glass border-r border-gray-50" // Added border-r here
       }
     >
       <nav className="h-full flex flex-col gap-3">
